@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .header {
+                background-color: red;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 3rem;
+            }
+            .desktop{
+                display: none;
+            }
+            .mobile {
+                font-size: 16px;
+            }
+            .header__title{
+                width: 15rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .header__list{
+                cursor: pointer;
+            }
+            .search__content{
+                background-color: #fff;
+                width: 100%;
+                height: 2rem;
+                display: flex;
+                justify-content: space-evenly;
+                border-radius: 10rem;
+            }
+            .header__search--mobile, .header__search{
+                width: 100%;
+                margin: 6px 10px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                font-size: 14px;
+            }
+            .header__btn{
+                border: transparent;
+                background-color: transparent;
+                cursor: pointer;
+                width: 10%;
+                padding-right: 10px;
+            }
+            .header__options{
+                width: 40%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-left: 8px;
+            }
+            .header__account{
+                text-align: center;
+                cursor: pointer;
+                display: flex;
+            }
+            .header__cart{
+                display: flex;
+                cursor: pointer;
+            }
+            .header__car{
+                position: relative;
+                top: -1px;
+            }
+            .header__car, .header__person {
+                width: 80%;
+            }
+            .header__cart--items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: orange;
+                border-radius: 50%;
+                position: relative;
+                top: -2px;
+                left: -9px;
+                width: 1.5rem;
+                height: 1rem;
+                font-size: 13px;
+            }
+            @media screen and (max-width: 444px) {
+                .header__btn {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: 768px) {
+                .mobile {
+                    display: none;
+                }
+                .desktop {
+                    display: flex;
+                }
+                .header__title {
+                    width: 10rem;
+                    font-size: 14px;
+                    margin: 0 10px;
+                }
+                .header__list {
+                    display: none;
+                }
+                .search__content {
+                    width: 50%;
+                }
+                .header__options {
+                    margin-left: 15px;
+                }
+                .header__box , .header__person, .header__car {
+                    width: 25px;
+                }
+                span {
+                    align-items: center;
+                    margin-left: 10px;
+                }
+                .header__cart--items {
+                    top: -8px;
+                    left: -22px;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+        </style>
+        <title>Shoppy Center</title>
+    </head>
+    <body>
+        <header>
+        <div class="header">
+            <section class="header__title">
+                <h1 class="desktop">Shoppy Center</h1>
+                <h1 class="mobile">Shoppy Center</h1>
+                <img class="header__list" src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
+            </section>
+            <section class="search__content">
+                <input type="text" class="header__search desktop" placeholder="Buscar producto">
+                <input type="text" class="header__search--mobile mobile" placeholder="Buscar...">
+                <button class="header__btn" type="button">
+                    <img class="header__lens" src="../node_modules/bootstrap-icons/icons/search.svg">
+                </button>
+            </section>
+            <section class="header__options">
+                <div class="header__orders desktop">
+                    <img class="header__box" src="../node_modules/bootstrap-icons/icons/box-seam.svg">
+                    <span class="desktop">Mis pedidos</span>
+                </div>
+                <div class="header__account">
+                    <img class="header__person" src="../node_modules/bootstrap-icons/icons/person.svg">
+                    <span class="desktop">Mi cuenta</span>
+                    <img class="header__arrow" src="../node_modules/bootstrap-icons/icons/chevron-down.svg">
+                </div>
+                <div class="header__cart">
+                    <img class="header__car" src="../node_modules/bootstrap-icons/icons/cart3.svg">
+                    <span class="header__cart--items">0</span>
+                </div>
+            </section>
+        </div>
+
+        </header>
+    </body>
+</html>
