@@ -6,6 +6,7 @@
 
 .header__arrow, .header__arrow2 {
     transition: 0.3s;
+    font-size: 22px;
 }
 
 .rotate {
@@ -40,6 +41,7 @@
 }
 .header__list{
     cursor: pointer;
+    font-size: 24px;
 }
 .search__content{
     background-color: #fff;
@@ -85,6 +87,7 @@
 }
 .header__car, .header__person {
     width: 80%;
+    font-size: 22px;
 }
 .header__cart--items{
     display: flex;
@@ -210,6 +213,7 @@
     position: inherit;
     width: 25px;
     cursor: pointer;
+    font-size: 28px;
 }
 .text1 {
     text-align: initial;
@@ -240,10 +244,6 @@
 .icons {
     margin-right: 10px;
 }
-.color {
-    background-color: green;
-    border-radius: 100%;
-}
 
 /* Diseño desktop */
 @media screen and (max-width: 444px) {
@@ -264,7 +264,7 @@
         font-size: 14px;
         margin: 0 10px;
     }
-    .header__list {
+    .header__list.bx {
         display: none;
     }
     .search__content {
@@ -275,6 +275,7 @@
     }
     .header__box , .header__person, .header__car {
         width: 25px;
+        font-size: 26px;
     }
     span {
         align-items: center;

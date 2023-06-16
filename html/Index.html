@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoppy Center</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 </head>
 <body>
     <header>
         <div class="header">
             <section class="header__title">
                 <h1 class="desktop">Shoppy Center</h1>
-                <h1 class="mobile">Shoppy Center</h1>
-                <img class="header__list" src="./node_modules/bootstrap-icons/icons/list.svg" alt="">
+                <h2 class="mobile">Shoppy Center</h2>
+                <i class="header__list bx bx-menu"></i>
             </section>
             <section class="search__content">
                 <button type="button" class="header__search--category desktop">
                     <p class="sBtn_text">Todas las categorías</p>
-                    <img class="header__arrow" src="./node_modules/bootstrap-icons/icons/chevron-down.svg">
+                    <i class="header__arrow bx bx-chevron-down"></i>
                 </button>
                 <input type="text" class="header__search desktop" placeholder="Buscar producto">
                 <input type="text" class="header__search--mobile mobile" placeholder="Buscar...">
                 <button class="header__btn" type="button">
-                    <img class="header__lens" src="./node_modules/bootstrap-icons/icons/search.svg">
+                    <i class="header__lens bx bx-search"></i>
                 </button>
             </section>
             <section class="header__options">
                 <div class="header__orders desktop">
-                    <img class="header__box" src="./node_modules/bootstrap-icons/icons/box-seam.svg">
+                    <i class="header__box bx bx-cube"></i>
                     <span class="desktop">Mis pedidos</span>
                 </div>
                 <div class="header__account">
-                    <img class="header__person" src="./node_modules/bootstrap-icons/icons/person.svg">
+                    <i class="header__person bx bx-user"></i>
                     <span class="desktop">Mi cuenta</span>
-                    <img class="header__arrow2" src="./node_modules/bootstrap-icons/icons/chevron-down.svg">
+                    <i class="header__arrow2 bx bx-chevron-down"></i>
                 </div>
                 <div class="header__cart">
                     <img class="header__car" src="./node_modules/bootstrap-icons/icons/cart3.svg">
@@ -45,7 +46,7 @@
         <div class="shop inactive" >
             <div id="shopcar">
                 <p class="text">Mi Carrito</p>
-                <img src="./node_modules/bootstrap-icons/icons/x-lg.svg" id="shopcar__x">
+                <i id="shopcar__x" class="bx bx-x"></i>
             </div>
             <div class="shopcar__content">
                 <img class="shopcar__car" src="./node_modules/bootstrap-icons/icons/cart3.svg">
@@ -56,7 +57,7 @@
             <div id="list__login">
                 <ul>
                     <li class="list border"><img class="list__img" src="./node_modules/bootstrap-icons/icons/box-arrow-in-right.svg"></img> Iniciar sesión / Regístrarte</li>
-                    <li class="list border"><img class="list__img" src="./node_modules/bootstrap-icons/icons/person.svg"></img>Perfil</li>
+                    <li class="list border"><i class="list__img bx bx-user"></i>Perfil</li>
                     <li class="list"><img class="list__img" src="./node_modules/bootstrap-icons/icons/geo-alt.svg"></img>Dirección de entrega</li>
                 </ul>
             </div>
@@ -78,12 +79,12 @@
         <div class="menuMobile inactive">
             <div id="menu">
                 <p class="text1">Shoppy Center</p>
-                <img src="./node_modules/bootstrap-icons/icons/x-lg.svg" id="menu__x">
+                <i id="menu__x" class="bx bx-x"></i>
             </div>
             <div class="menuLists">
                 <section class="list1">
                     <ul>
-                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/house.svg">Home</li>
+                        <li class="lists"><i class="icons bx bx-home-alt"></i>Home</li>
                         <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/percent.svg">Descuentos</li>
                         <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/journal-text.svg">Blog</li>
                     </ul>
@@ -101,14 +102,82 @@
                 <section class="list1">
                     <p class="Subtitle">Te ayudamos</p>
                     <ul>
-                        <li class="lists"><img class="icons color" src="./node_modules/bootstrap-icons/icons/whatsapp.svg">Asistente Virtual</li>
-                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/building.svg">Nuestras Tiendas</li>
-                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/telephone.svg">Atención Al Cliente: Lima: (01) 123-4567</p></li>
+                        <li class="lists"><i class="icons bx bxl-whatsapp"></i>Asistente Virtual</li>
+                        <li class="lists"><i class="icons bx bx-store-alt"></i>Nuestras Tiendas</li>
+                        <li class="lists"><i class="icons bx bx-phone"></i>Atención Al Cliente: Lima: (01) 123-4567</li>
                     </ul>
                 </section>
             </div>
         </div>
     </header>
+
+    <footer>
+        <div class="footer">
+            <div class="comunications">
+                <h2>Comunícate con nosotros</h2>
+                <div class="medios">
+                    <div>
+                        <i class="bx bxl-messenger"></i>
+                        <div class="medios__text">
+                            <p class="medios__title">a</p>
+                            <p class="medios__content">bb</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="bx bx-mail-send"></i>
+                        <div class="medios__text">
+                            <p class="medios__title">a</p>
+                            <p class="medios__content">bb<a href="">dddd@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="bx bx-phone"></i>
+                        <div class="medios__text">
+                            <p class="medios__title">a</p>
+                            <p class="medios__content">bb<a href="">(01) 234 5678</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="bx bx-store-alt"></i>
+                        <div class="medios__text">
+                            <p class="medios__title">a</p>
+                            <p class="medios__content">bb<a href="">Ver tiendas</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="redes">
+                    <p class="generals">Síguenos en:</p>
+                    <i class="bx bxl-facebook"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-youtube"></i>
+                    <i class="bx bxl-instagram-alt"></i>
+                </div>
+            </div>
+            <div class="moreDetails">
+                <div class="nosotros">
+                    <h4 class="info">Nosotros</h4>
+                    <p class="info2">Conócenos</p>
+                    <p class="info2">Trabaja con nosotros</p>
+                    <p class="info2">Nuestras Tiendas</p>
+                    <img src="" alt="Libro de reclamaciones" class="bookReclam">
+                </div>
+                <div class="atencionCliente">
+                    <h4 class="info">Atención al cliente</h4>
+                    <p class="info2">Tutorial de Compras</p>
+                    <p class="info2">Horarios atención telefónica</p>
+                    <p class="info2">Preguntas frecuentes</p>
+                    <p class="info2">Cambios y devoluciones</p>
+                    <p class="info2">Comprobante electrónico</p>
+                </div>
+                <div class="politicasCondiciones">
+                    <h4 class="info">Políticas y condiciones</h4>
+                    <p class="info2">Políticas de datos personales</p>
+                    <p class="info2">Condiciones de promociones</p>
+                    <p class="info2">Términos y condiciones</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
