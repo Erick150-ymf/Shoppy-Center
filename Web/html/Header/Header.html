@@ -23,6 +23,9 @@
             .mobile {
                 font-size: 16px;
             }
+            .header__orders {
+                cursor: pointer;
+            }
             .header__title{
                 width: 15rem;
                 display: flex;
@@ -129,6 +132,18 @@
                     width: 1.2rem;
                     height: 1.2rem;
                 }
+                .header__search--category {
+                    background-color: transparent;
+                    border: none;
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding-left: 10px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
             }
         </style>
         <title>Shoppy Center</title>
@@ -142,6 +157,10 @@
                 <img class="header__list" src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
             </section>
             <section class="search__content">
+                <button type="button" class="header__search--category desktop">
+                    <p>Todas las categorías</p>
+                    <img class="header__arrow" src="../node_modules/bootstrap-icons/icons/chevron-down.svg">
+                </button>
                 <input type="text" class="header__search desktop" placeholder="Buscar producto">
                 <input type="text" class="header__search--mobile mobile" placeholder="Buscar...">
                 <button class="header__btn" type="button">
@@ -164,7 +183,6 @@
                 </div>
             </section>
         </div>
-
         </header>
     </body>
 </html>

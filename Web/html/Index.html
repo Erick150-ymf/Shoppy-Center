@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy Center</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <section class="header__title">
+                <h1 class="desktop">Shoppy Center</h1>
+                <h1 class="mobile">Shoppy Center</h1>
+                <img class="header__list" src="./node_modules/bootstrap-icons/icons/list.svg" alt="">
+            </section>
+            <section class="search__content">
+                <button type="button" class="header__search--category desktop">
+                    <p class="sBtn_text">Todas las categorías</p>
+                    <img class="header__arrow" src="./node_modules/bootstrap-icons/icons/chevron-down.svg">
+                </button>
+                <input type="text" class="header__search desktop" placeholder="Buscar producto">
+                <input type="text" class="header__search--mobile mobile" placeholder="Buscar...">
+                <button class="header__btn" type="button">
+                    <img class="header__lens" src="./node_modules/bootstrap-icons/icons/search.svg">
+                </button>
+            </section>
+            <section class="header__options">
+                <div class="header__orders desktop">
+                    <img class="header__box" src="./node_modules/bootstrap-icons/icons/box-seam.svg">
+                    <span class="desktop">Mis pedidos</span>
+                </div>
+                <div class="header__account">
+                    <img class="header__person" src="./node_modules/bootstrap-icons/icons/person.svg">
+                    <span class="desktop">Mi cuenta</span>
+                    <img class="header__arrow2" src="./node_modules/bootstrap-icons/icons/chevron-down.svg">
+                </div>
+                <div class="header__cart">
+                    <img class="header__car" src="./node_modules/bootstrap-icons/icons/cart3.svg">
+                    <span class="header__cart--items">0</span>
+                </div>
+            </section>
+        </div>
+        
+        <div class="shop inactive" >
+            <div id="shopcar">
+                <p class="text">Mi Carrito</p>
+                <img src="./node_modules/bootstrap-icons/icons/x-lg.svg" id="shopcar__x">
+            </div>
+            <div class="shopcar__content">
+                <img class="shopcar__car" src="./node_modules/bootstrap-icons/icons/cart3.svg">
+                <p class="shopcar__content--text">No tienes productos en tu carrito. Comienza a llenarlo.</p>
+            </div>
+        </div>
+        <div class="login inactive">
+            <div id="list__login">
+                <ul>
+                    <li class="list border"><img class="list__img" src="./node_modules/bootstrap-icons/icons/box-arrow-in-right.svg"></img> Iniciar sesión / Regístrarte</li>
+                    <li class="list border"><img class="list__img" src="./node_modules/bootstrap-icons/icons/person.svg"></img>Perfil</li>
+                    <li class="list"><img class="list__img" src="./node_modules/bootstrap-icons/icons/geo-alt.svg"></img>Dirección de entrega</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Categories inactive">
+            <div class="categoryLists">
+                <ul>
+                    <li class="sublists"><span class="option-text">Todas las categorías</span></li>
+                    <li class="sublists"><span class="option-text">Bebidas</span></li>
+                    <li class="sublists"><span class="option-text">Cuidado Personal</span></li>
+                    <li class="sublists"><span class="option-text">Limpieza</span></li>
+                    <li class="sublists"><span class="option-text">Mascotas</span></li>
+                    <li class="sublists"><span class="option-text">Congelados</span></li>
+                    <li class="sublists"><span class="option-text">Lácteos</span></li>
+                    <li class="sublists"><span class="option-text">Supermercado</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menuMobile inactive">
+            <div id="menu">
+                <p class="text1">Shoppy Center</p>
+                <img src="./node_modules/bootstrap-icons/icons/x-lg.svg" id="menu__x">
+            </div>
+            <div class="menuLists">
+                <section class="list1">
+                    <ul>
+                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/house.svg">Home</li>
+                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/percent.svg">Descuentos</li>
+                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/journal-text.svg">Blog</li>
+                    </ul>
+                </section>
+                <section class="list1">
+                    <p class="Subtitle">Categorías</p>
+                    <ul>
+                        <li class="lists">Supermercado</li>
+                        <li class="lists">Día del Padre</li>
+                        <li class="lists">Cuidado Personal</li>
+                        <li class="lists">Mascotas</li>
+                        <li class="lists">Limpieza y Hogar</li>
+                    </ul>
+                </section>
+                <section class="list1">
+                    <p class="Subtitle">Te ayudamos</p>
+                    <ul>
+                        <li class="lists"><img class="icons color" src="./node_modules/bootstrap-icons/icons/whatsapp.svg">Asistente Virtual</li>
+                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/building.svg">Nuestras Tiendas</li>
+                        <li class="lists"><img class="icons" src="./node_modules/bootstrap-icons/icons/telephone.svg">Atención Al Cliente: Lima: (01) 123-4567</p></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </header>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

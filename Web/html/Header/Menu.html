@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #menu {
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0.5rem;
+            height: 3rem;
+            border-bottom: 0.5px solid rgb(235, 235, 235);
+        }
+        #menu__x {
+            position: inherit;
+            width: 25px;
+            cursor: pointer;
+        }
+        .text {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .menuLists {
+            background-color: #f0efef;
+            height: 92vh;
+            overflow-y: scroll;
+        }
+        .list {
+            background-color: white;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .list1 {
+            background-color: white;
+            padding: 1rem;
+        }
+        .lists {
+            margin-bottom: 1rem;
+            list-style: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .Subtitle {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .icons {
+            margin-right: 10px;
+        }
+        .color {
+            background-color: green;
+            border-radius: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            #menu {
+                display: none;
+            }
+            .menuLists {
+                display: none;
+            }
+        }
+    </style>
+    <title>Menu</title>
+</head>
+<body>
+    <div id="menu">
+        <p class="text">Shoppy Center</p>
+        <img src="../node_modules/bootstrap-icons/icons/x-lg.svg" id="menu__x">
+    </div>
+    <div class="menuLists">
+        <section class="list1">
+            <ul>
+                <li class="lists"><img class="icons" src="../node_modules/bootstrap-icons/icons/house.svg">Home</li>
+                <li class="lists"><img class="icons" src="../node_modules/bootstrap-icons/icons/percent.svg">Descuentos</li>
+                <li class="lists"><img class="icons" src="../node_modules/bootstrap-icons/icons/journal-text.svg">Blog</li>
+            </ul>
+        </section>
+        <section class="list">
+            <p class="Subtitle">Categorías</p>
+            <ul>
+                <li class="lists">Supermercado</li>
+                <li class="lists">Día del Padre</li>
+                <li class="lists">Cuidado Personal</li>
+                <li class="lists">Mascotas</li>
+                <li class="lists">Limpieza y Hogar</li>
+            </ul>
+        </section>
+        <section class="list">
+            <p class="Subtitle">Te ayudamos</p>
+            <ul>
+                <li class="lists"><img class="icons color" src="../node_modules/bootstrap-icons/icons/whatsapp.svg">Asistente Virtual</li>
+                <li class="lists"><img class="icons" src="../node_modules/bootstrap-icons/icons/building.svg">Nuestras Tiendas</li>
+                <li class="lists"><img class="icons" src="../node_modules/bootstrap-icons/icons/telephone.svg">Atención Al Cliente: Lima: (01) 123-4567</p></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
